@@ -1,0 +1,95 @@
+*{
+    text-align: center;
+    color: rgb(174, 0, 255);
+    font-family: Orbitron;
+}
+html{
+    background-color: rgb(15, 9, 21);
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 1000px;
+    margin: auto;
+}
+button {
+    width: 200px;
+    height: 40px;
+    color: gray;
+    background-color: black;
+    border: 2px solid purple;
+}
+#slider {
+    width: 200px;
+}
+#colorPicker {
+    width: 200px;
+    height: 60px;
+    -webkit-appearance: none;
+    border: 3px solid purple;
+}
+#colorPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+  
+#colorPicker::-webkit-color-swatch {
+    border: none;
+}
+#options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 260px;
+    background-color: rgba(41, 19, 63, 0.375);
+
+}
+#grid {
+    display: grid;
+    padding: 0;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(164, 162, 162);
+    box-shadow: rgba(164, 162, 162, 0.2) 0px 0px 10px 10px;
+}
+.grid-item {
+    border: 0;
+    user-select: none;
+}
+h1 {
+  font-size: 50px;
+}
+button:active {
+    background-color: purple;
+}
+@font-face {
+    font-family: Orbitron;
+    src: url("font/Orbitron-Medium.ttf");
+}
+@media screen and (max-width: 600px){
+   main{
+    width: 98%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+   }
+   #grid {
+    max-width: 320px;
+    max-height: 320px;
+    margin-bottom: 20px;
+   }
+   h1{
+    font-size: 20px;
+   }
+   #options{
+    height: 20%;
+    margin-bottom: 10px;
+    width: 80%;
+    padding-top: 5px;
+   }
+   button {
+    height: 15%;
+   }
+}
